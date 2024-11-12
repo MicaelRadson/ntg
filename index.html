@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper Coverflow do Zero</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <img src="./images/ntg-logo.jpg" alt="">
+    </header>
+
+    <section id="content--first">
+        <div class="value-proposition">
+            <h1>Gerencie seu estoque de forma 100% eficiente.</h1>
+            <div class="card">
+                <p>Economize até 80% do seu tempo, aumentando sua margem de produtividade.</p>
+                <p>Liberte sua equipe das tarefas repetitivas e operacionais. Com a NTG, você reduz drasticamente o
+                    tempo gasto em processos diários, permitindo que todos se concentrem no que realmente importa para o
+                    crescimento da sua empresa.</p>
+                <div class="button-container">
+                    <button>CADASTRAR</button>
+                    <button id="button--detail">DETALHES</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="content-swipper">
+
+        <div class="coverflow-container">
+            <button class="nav-button prev" onclick="prevSlide()">&#10094;</button>
+            <div class="coverflow-wrapper">
+                <div class="coverflow-slide">Slide 1</div>
+                <div class="coverflow-slide">Slide 2</div>
+                <div class="coverflow-slide">Slide 3</div>
+                <div class="coverflow-slide">Slide 4</div>
+                <div class="coverflow-slide">Slide 5</div>
+            </div>
+            <button class="nav-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+        <div class="indicators"></div>
+
+        <script src="swipper.js"></script>
+
+    </section>
+
+    <section id="content--second">
+        <div class="circle">
+            <ul>
+                <li>
+                    <img src="./images/mulher.jpg" alt="Foto de uma mulher">
+                    <div class="depoiment">
+                        <h2>Depoimento da mulher</h2>
+                        <p>Estou extremamente satisfeito com o software de gerenciamento de estoque! A interface é
+                            intuitiva e fácil de usar, o que facilitou a adaptação da minha equipe. Conseguimos
+                            controlar os produtos de forma muito mais eficiente, evitando faltas ou excessos de
+                            mercadoria. A automatização de alertas e relatórios tem sido um grande diferencial, trazendo
+                            mais precisão e agilidade ao nosso dia a dia. Recomendo a todos que buscam otimizar a gestão
+                            do estoque!.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/homem.jpg" alt="Foto de um homem">
+                    <div class="depoiment">
+                        <h2>Depoimento do homem</h2>
+                        <p>Adotamos este software de gerenciamento de estoque há alguns meses e os resultados têm sido
+                            incríveis! A integração com o sistema de vendas foi uma grande sacada, pois conseguimos
+                            acompanhar o fluxo de entrada e saída de produtos em tempo real. Além disso, o suporte
+                            técnico é ágil e sempre pronto para nos ajudar. Agora, temos muito mais controle sobre o
+                            estoque e conseguimos tomar decisões mais assertivas para o negócio.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/ceo.jpg" alt="Foto de um CEO">
+                    <div class="depoiment">
+                        <h2>Depoimento do CEO</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div id="top">
+        <a href=""><img src="./images/seta.png" alt=""></a>
+    </div>
+</body>
+
+</html>
